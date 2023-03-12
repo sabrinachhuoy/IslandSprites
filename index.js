@@ -44,7 +44,7 @@ const battleZones = []
 
 battleZonesMap.forEach((row, i) => {
   row.forEach((symbol, j) => {
-    if (symbol === 1025)
+    if (symbol === 1026)
       battleZones.push(
         new Boundary({
           position: {
@@ -58,14 +58,14 @@ battleZonesMap.forEach((row, i) => {
 
 const characters = []
 const villagerImg = new Image()
-villagerImg.src = './img/villager/Idle.png'
+// villagerImg.src = './img/villager/Idle.png'
 
 const oldManImg = new Image()
 oldManImg.src = './img/oldMan/Idle.png'
 
 charactersMap.forEach((row, i) => {
   row.forEach((symbol, j) => {
-    // 1026 === villager
+    //1026 === villager
     if (symbol === 1026) {
       characters.push(
         new Character({
@@ -73,7 +73,7 @@ charactersMap.forEach((row, i) => {
             x: j * Boundary.width + offset.x,
             y: i * Boundary.height + offset.y
           },
-          image: villagerImg,
+           image: villagerImg,
           frames: {
             max: 4,
             hold: 60
@@ -117,10 +117,10 @@ charactersMap.forEach((row, i) => {
 })
 
 const image = new Image()
-image.src = './img/Pellet Town.png'
+image.src = './img/map.png'
 
 const foregroundImage = new Image()
-foregroundImage.src = './img/foregroundObjects.png'
+// foregroundImage.src = './img/foregroundObjects.png'
 
 const playerDownImage = new Image()
 playerDownImage.src = './img/playerDown.png'

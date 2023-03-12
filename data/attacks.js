@@ -3,7 +3,7 @@ const attacks = {
     name: 'Tackle',
     damage: 10,
     type: 'Normal',
-    color: 'black'
+    color: 'green'
   },
   Fireball: {
     name: 'Fireball',
